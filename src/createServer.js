@@ -93,10 +93,10 @@ function createServer() {
 
     res.end(
       JSON.stringify({
-        originalCase,
-        targetCase: toCase,
-        convertedText: convertedText,
-        originalText: text,
+        originalCase: `${originalCase}`,
+        targetCase: `${toCase}`,
+        convertedText: `${convertedText}`,
+        originalText: `${text}`,
       }),
     );
   });
